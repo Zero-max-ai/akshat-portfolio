@@ -11,6 +11,11 @@ const projectDetails: projectDetailsProps[] = [
   { image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3-alpha.figma.com%2Fhub%2Ffile%2F3123346331%2F9d6c4b69-2e31-4264-a8b0-788bc1f67f10-cover.png&f=1&nofb=1&ipt=d4fe155b356295979e61262b3e89439f5828d60f071d7ff82366bf8457ce1a6b', title: 'Rust OS Kernel', titleLink: 'os_kernel', githubLink: 'https://github.com/Zero-max-ai/RustOSKernel' },
 ]
 
+const mySkillSet: string[] = [
+  'c++', 'Rust', 'NLP', 'Bash', 'Linux', 'UI/UX', 'Figma', 'Python','Tableau','Power Bi','JavaScript', 'TypeScript'
+]
+
 export {
   projectDetails,
+  mySkillSet,
 }
