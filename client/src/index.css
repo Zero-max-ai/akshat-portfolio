@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import "tailwindcss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "tailwindcss";
 
-* {
-  font-family: "League Spartan", sans-serif;
-  background-color: #f7f7f2;
+body {
+  font-family: 'Outfit', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Newsreader", serif;
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.cabinet {
+  font-family: 'Cabinet Grotesk', sans-serif;
 }

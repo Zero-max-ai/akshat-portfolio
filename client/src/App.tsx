@@ -6,8 +6,8 @@ import Home from './pages/Home';
 const App = () => {
   return (
     <Routes>
-      <Route element={<Layout />}>
-        <Route index path={""} element={<Home />} />
+      <Route path={'/'} element={<Layout />}>
+        <Route path={''} element={<Home />} />
       </Route>
     </Routes>
   )

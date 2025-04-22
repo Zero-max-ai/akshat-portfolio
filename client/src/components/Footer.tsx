@@ -1,12 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="text-center py-6 text-sm text-gray-500">
-      <p>© 2025 Akshat Gangi</p>
-      <div className="flex justify-center gap-4 mt-2">
-        <Link to={"https://github.com/Zero-max-ai"} target={"_blank"} rel="noopener noreferrer">GitHub</Link>
-        <Link to={"https://linkedin.com/in/akshat-gangi-b457a61ab/"} target={"_blank"} rel="noopener noreferrer">LinkedIn</Link>
+    <footer className="pt-2 pb-4">
+      <div className="w-2/3 mx-auto flex items-center justify-center font-thin">
+        <span>
+          <Link to={''} className="underline underline-offset-4">Resume</Link> /{" "}
+          <Link to={'mailto:gangi.keshav03@gmail.com'} className="underline underline-offset-4">Mail</Link> /{" "}
+          <Link to={'https://www.linkedin.com/in/akshat-gangi-b457a61ab/'} className="underline underline-offset-4">LinkedIn</Link> /{" "}
+          <Link to={'https:/github.com/Zero-max-ai'} className="underline underline-offset-4">Github</Link>
+        </span>
       </div>
     </footer>
   )
