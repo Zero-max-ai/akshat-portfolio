@@ -12,7 +12,7 @@ const projectDetails: projectDetailsProps[] = [
 ]
 
 const mySkillSet: string[] = [
-  'c++', 'Rust', 'NLP', 'Bash', 'Linux', 'UI/UX', 'Figma', 'Python','Tableau','Power Bi','JavaScript', 'TypeScript'
+  'C++', 'Rust', 'NLP', 'Bash', 'Linux', 'UI/UX', 'Figma', 'Python','Tableau','Power Bi','JavaScript', 'TypeScript'
 ]
 
 export {

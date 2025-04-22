@@ -11,9 +11,10 @@ const Navbar = () => {
               Akshat Gangi
             </Link>
           </h1>
-          <Link to={'/projects'} className="font-light">Projects</Link>
-          <Link to={'/About'} className="font-light">About</Link>
-          <Link to={''} className="font-light">Resume</Link>
+          <a href='#projects' className="font-thin">Projects</a>
+          <a href='#about-me' className="font-thin">About</a>
+          <Link to={''} className="font-thin">Resume</Link>
+          <Link to={'/404-me'} className="font-thin">404 Me</Link>
         </div>
         <div className="cursor-pointer">
           <img src={Sun} />

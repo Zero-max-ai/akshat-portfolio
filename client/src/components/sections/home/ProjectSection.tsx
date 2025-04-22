@@ -9,7 +9,7 @@ import { projectDetails } from '../../../utils/index';
 
 const ProjectSection = () => {
   return (
-    <div className="flex flex-col gap-[32px] items-center justify-center">
+    <div id={'projects'} className="flex flex-col gap-[32px] items-center justify-center">
       <Heading head={'Projects'} />
       <div className="flex flex-wrap items-center justify-between gap-10 max-w-[700px]">
         {
