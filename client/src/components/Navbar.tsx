@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
-import Sun from '../assets/Sun.png'
+import Sun from '../assets/Sun.png';
+import useThemeStore from '../store/theme';
 
 const Navbar = () => {
+  const theme = useThemeStore((state) => state.theme);
+  const toggleTheme = useThemeStore((state) => state.toggleTheme);
   return (
     <header className="absolute top-0 left-0 w-full py-2">
       <div className="w-2/3 mx-auto flex items-center justify-between">
@@ -17,7 +20,7 @@ const Navbar = () => {
           <Link to={'/404-me'} className="font-thin">404 Me</Link>
         </div>
         <div className="cursor-pointer">
-          <img src={Sun} />
+          <img src={Sun} onClick={toggleTheme} />
         </div>
       </div>
     </header>
