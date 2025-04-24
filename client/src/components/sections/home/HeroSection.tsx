@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+import Button from '../../../components/Button'
 import DownloadPng from '../../../assets/Download.png';
 import GithubPng from '../../../assets/Github.png';
 
@@ -11,19 +12,16 @@ const HeroSection = () => {
         A developer and analyst based in New Delhi. Currently working on rust based cli script and learning Japanese as my third speaking language.
       </span>
       <div className="flex gap-14">
-        <Link
-          style={{ boxShadow: '4px 4px 4px rgba(0, 0, 0, 0.25)' }}
+        <Button
           to={''}
-          className="font-thin flex items-center gap-[10px] px-3 py-1 rounded-sm">
-          Resume <img src={DownloadPng} />
-        </Link>
-        <Link
-          style={{boxShadow: '4px 4px 4px rgba(0, 0, 0, 0.25)'}}
-          to={'https://www.github.com/Zero-max-ai'}
-          className="font-thin flex items-center gap-[10px] px-3 py-1 rounded-sm"
-          target={"_blank"}>
-          Github <img src={GithubPng} />
-        </Link>
+          title={'Resume'}
+          icon={DownloadPng}
+        />
+        <Button
+          to={'https://github.com/Zero-max-ai/'}
+          title={'Github'}
+          icon={GithubPng}
+        />
       </div>
     </div>
   )

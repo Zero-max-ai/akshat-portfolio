@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,4 +19,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .cabinet {
   font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+@theme {
+  --shadow-light: 4px 4px 4px rgba(0, 0, 0, 0.25); /* light mode */
+  --shadow-dark: 4px 4px 4px rgba(247, 247, 247, 0.25); /* dark mode */
 }

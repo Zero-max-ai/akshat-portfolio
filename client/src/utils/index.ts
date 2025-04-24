@@ -1,3 +1,7 @@
+const projects: string[] = [
+  'Pixel Playground', 'HomeoClinic Analysis', 'Rust OS Kernel'
+]
+
 type projectDetailsProps = {
   image: string;
   title: string;

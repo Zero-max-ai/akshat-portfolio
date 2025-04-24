@@ -3,7 +3,7 @@ import Heading from '../components/Heading';
 
 const NotFound = () => {
   return (
-    <div className="min-h-[100vh] flex flex-col gap-[32px] items-center justify-center">
+    <div className="bg-[#f7f7f7] dark:bg-[#191C1F] dark:text-white min-h-[100vh] flex flex-col gap-[32px] items-center justify-center">
       <div className="font-thin flex flex-col gap-3 max-w-[700px]">
         <h1 className="cabinet font-extrabold text-[40px]">You'd been 404'd ≧∇≦</h1>
         <span>
