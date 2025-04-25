@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 interface ButtonProps {
   to: string;
   title: string;
-  icon: string;
+  icon?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({to, title, icon}) => {

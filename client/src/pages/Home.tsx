@@ -7,13 +7,13 @@ const Home = () => {
   return (
     <div>
       <HeroSection />
-      <hr className="my-40" />
+      <hr className="my-40 max-md:mb-20" />
       <ProjectSection />
-      <hr className="my-40" />
+      <hr className="my-40 max-md:my-20" />
       <AboutMe />
-      <hr className="my-40" />
+      <hr className="my-40 max-md:my-20" />
       <CurrentProject />
-      <hr className="mt-40 mb-10" />
+      <hr className="mt-40 mb-10 max-md:mt-20" />
     </div>
   )
 }

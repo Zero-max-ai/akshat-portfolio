@@ -6,7 +6,7 @@ import { mySkillSet} from '../../../utils/index';
 const CurrentProject = () => {
   return (
     <div className="flex flex-col gap-[32px] items-center justify-center">
-      <Heading head={'Current Working Project'} />
+      <Heading head={'Current Working Projects'} />
       <div className="font-thin flex flex-col gap-3 max-w-[700px]">
         <span>
           So, currently I am working on building 2 project simultaneously,
