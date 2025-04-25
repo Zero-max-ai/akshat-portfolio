@@ -2,11 +2,15 @@ import { Link } from 'react-router-dom';
 import Sun from '../assets/Sun.png';
 import Moon from '../assets/Moon.png';
 import useThemeStore from '../store/theme';
+import useMenuStore from '../store/menu';
+import Hamburger from './Hamburger';
+import MobNavigation from './MobNavigation';
 
 const Navbar = () => {
+  const { menu } = useMenuStore();
   const { theme, themeToggle } = useThemeStore();
   return (
-    <header className="absolute top-0 left-0 w-full py-2 border-b border-dashed">
+    <header className="fixed top-0 left-0 w-full py-2 border-b border-dashed backdrop-blur-md">
       <div className="max-md:w-11/12 w-2/3 mx-auto flex items-center justify-between">
         <div className="flex items-center gap-10 text-lg"> 
           <h1>
@@ -22,6 +26,8 @@ const Navbar = () => {
         <div className="max-md:hidden cursor-pointer" onClick={themeToggle}>
           <img src={theme === 'light' ? Sun : Moon} />
         </div>
+        <Hamburger />
+        { menu && <MobNavigation /> }
       </div>
     </header>
   )

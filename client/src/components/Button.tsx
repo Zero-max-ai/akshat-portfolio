@@ -10,7 +10,7 @@ const Button: React.FC<ButtonProps> = ({to, title, icon}) => {
   return (
     <Link
       to={to}
-      className="shadow-light dark:shadow-dark font-thin flex items-center gap-[10px] px-3 py-1 rounded-sm">
+      className="w-fit shadow-light dark:shadow-dark font-thin flex items-center gap-[10px] px-3 py-1 rounded-sm">
       {title} <img src={icon} />
     </Link>
 

@@ -4,6 +4,7 @@
 - [x] theme style {zustand}.
 - [ ] project card, button and icons theme upgrade.
 - [ ] project desciption {card based}.
-- [ ] about me section add { linkedIn or social media icons or btn }.
-- [ ] current project section add { github repo of project }.
-- [ ] make everything responsive.
+- [x] make everything responsive.
+- [ ] add localStorage theme preference.
+- [ ] fix the svg blur and color issue.
+- [ ] add relevant projects and there routes.
