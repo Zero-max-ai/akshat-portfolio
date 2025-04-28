@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import Sun from '../assets/Sun.png';
-import Moon from '../assets/Moon.png';
+import Sun from '../assets/Sun.svg';
+import Moon from '../assets/Moon.svg';
 import useThemeStore from '../store/theme';
 import useMenuStore from '../store/menu';
 import Hamburger from './Hamburger';

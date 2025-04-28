@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import Sun from '../assets/Sun.png';
-import Moon from '../assets/Moon.png';
+import Sun from '../assets/Sun.svg';
+import Moon from '../assets/Moon.svg';
 import useMenuStore from '../store/menu';
 import useThemeStore from '../store/theme';
 
@@ -15,8 +15,8 @@ const MobNavigation = () => {
         <Link to={''} className="md:hidden font-thin" onClick={toggleMenu}>Resume</Link>
         <Link to={'/404-me'} className="md:hidden font-thin" onClick={toggleMenu}>404 Me</Link>
       </div>
-      <div className="md:hidden cursor-pointer flex items-center gap-[8px] font-thin" onClick={() => { themeToggle(); toggleMenu()}}>
-        <img src={theme === 'light' ? Sun : Moon} /> Theme
+      <div className="md:hidden cursor-pointer flex items-center gap-[8px] font-thin" onClick={() => { themeToggle();}}>
+        <img key={theme} src={theme === 'light' ? Sun : Moon} /> Theme
       </div>
     </div>
   )

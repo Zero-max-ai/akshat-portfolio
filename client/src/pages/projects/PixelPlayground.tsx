@@ -1,6 +1,6 @@
 const PixelPlayground = () => {
   return (
-    <div>
+    <div className="">
       this is project description
     </div>
   )

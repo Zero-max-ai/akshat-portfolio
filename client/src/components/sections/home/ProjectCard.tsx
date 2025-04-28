@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
-import ExternalLink from '../../../assets/ExternalLink.png'
-import Github from '../../../assets/Github.png';
+import ExternalLink from '../../../assets/ExternalLink.svg'
+import Github from '../../../assets/Github.svg';
 import useThemeStore from '../../../store/theme';
 
 type ProjectCard = {

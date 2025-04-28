@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
 import Button from '../../../components/Button'
-import DownloadPng from '../../../assets/Download.png';
-import GithubPng from '../../../assets/Github.png';
+import Download from '../../../assets/Download.svg';
+import Github from '../../../assets/Github.svg';
 
 const HeroSection = () => {
   return (
@@ -15,12 +15,12 @@ const HeroSection = () => {
         <Button
           to={''}
           title={'Resume'}
-          icon={DownloadPng}
+          Icon={Download}
         />
         <Button
           to={'https://github.com/Zero-max-ai/'}
           title={'Github'}
-          icon={GithubPng}
+          Icon={Github}
         />
       </div>
     </div>
