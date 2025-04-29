@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import useThemeStore from './store/theme';
 import PixelPlayground from './pages/projects/PixelPlayground'
+import Homeo from './pages/projects/Homeo';
+import RustKernel from './pages/projects/RustKernel';
 
 const App = () => {
   const { theme } = useThemeStore();
@@ -27,6 +29,8 @@ const App = () => {
       <Route path={'/'} element={<Layout />}>
         <Route index path={''} element={<Home />} />
         <Route path={'/project/pixel_playground'} element={<PixelPlayground />} />
+        <Route path={'/project/homeo_analysis'} element={<Homeo />} />
+        <Route path={'/project/rust_kernel'} element={<RustKernel />} />
       </Route>
       <Route path={'*'} element={<NotFound />} />
     </Routes>
