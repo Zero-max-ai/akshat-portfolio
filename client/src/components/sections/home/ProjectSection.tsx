@@ -1,9 +1,5 @@
-import { Link } from 'react-router-dom';
-
 import Heading from '../../Heading';
 import ProjectCard from './ProjectCard';
-import DownloadPng from '../../../assets/Download.png';
-import GithubPng from '../../../assets/Github.png';
 import { projectDetails } from '../../../utils/index';
 
 

@@ -1,7 +1,4 @@
-import { Link } from 'react-router-dom';
-
 import Heading from '../../Heading';
-import { mySkillSet} from '../../../utils/index';
 
 const CurrentProject = () => {
   return (

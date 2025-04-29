@@ -13,8 +13,8 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 w-full py-2 border-b border-dashed backdrop-blur-md">
       <div className="max-md:w-11/12 w-2/3 mx-auto flex items-center justify-between">
         <div className="flex items-center gap-10 text-lg"> 
-          <h1>
-            <Link to={'/'} className="font-extrabold">
+          <h1 className="">
+            <Link to={'/'} className="flex items-center gap-2 font-extrabold">
               Akshat Gangi
             </Link>
           </h1>

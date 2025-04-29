@@ -1,10 +1,11 @@
 type HeadingProps = {
   head: string;
+  style?: string;
 }
 
-const Heading = (props : HeadingProps) => {
+const Heading: React.FC<HeadingProps> = ({ head, style }) => {
   return (
-    <h1 className="w-[505px] max-md:w-full font-extrabold text-[40px] max-md:text-[24px]">{props.head}</h1>
+    <h1 className={`${style ? style : "text-[40px] font-extrabold"} w-[505px] max-md:w-full max-md:text-[24px]`}>{head}</h1>
   )
 }
 

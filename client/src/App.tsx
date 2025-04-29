@@ -5,7 +5,7 @@ import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import useThemeStore from './store/theme';
-import PixelPlayground from './pages/projects/PixelPlayground'
+import Pixel from './pages/projects/Pixel'
 import Homeo from './pages/projects/Homeo';
 import RustKernel from './pages/projects/RustKernel';
 
@@ -28,7 +28,7 @@ const App = () => {
     <Routes>
       <Route path={'/'} element={<Layout />}>
         <Route index path={''} element={<Home />} />
-        <Route path={'/project/pixel_playground'} element={<PixelPlayground />} />
+        <Route path={'/project/pixel_playground'} element={<Pixel />} />
         <Route path={'/project/homeo_analysis'} element={<Homeo />} />
         <Route path={'/project/rust_kernel'} element={<RustKernel />} />
       </Route>

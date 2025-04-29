@@ -1,8 +1,4 @@
-const projects: string[] = [
-  'Pixel Playground', 'HomeoClinic Analysis', 'Rust OS Kernel'
-]
-
-type projectDetailsProps = {
+interface projectDetailsProps {
   image: string;
   title: string;
   titleLink: string;
@@ -19,7 +15,20 @@ const mySkillSet: string[] = [
   'C++', 'Rust', 'NLP', 'Bash', 'Linux', 'UI/UX', 'Figma', 'Python','Tableau','Power Bi','JavaScript', 'TypeScript'
 ]
 
+interface pixel_playground_props {
+  title: string;
+  content: string[];
+}
+
+const pixel_playground: pixel_playground_props[] = [
+  { title: 'Purpose & Vision', content: ['Main Goal: To provide a free, accessible playground for image manipulation using pixel art and other visuals without needing to download heavy software.', 'User Experience: Focused on simplicity, interactivity, and learning by doing. Users can tweak images, view effects in real time, and explore different design styles.', 'Future Vision: Evolve into a full-featured asset store and creative toolkit powered by AI, offering user-generated assets and machine-generated visuals via models like Ollama or Hugging Face.'] },
+  { title: 'Core Feature (MVP)', content: ['Access a library of free images', 'Play with image filters and transformations (in progress)', 'Report system for feedback', 'Responsive and clean UI/UX', 'Admin controls for managing users and reports (planned)', 'Asset marketplace (Phase 2)', 'AI generation tools using models like Ollama/HuggingFace (Phase 3)'] },
+  { title: 'Frontend Tech Stack', content: ['React – Core UI framework', 'TypeScript – Static typing for reliability', 'Tailwind CSS v4 – Utility-first CSS framework', 'Framer Motion – Animations and transitions'] },
+  { title: 'Backend Tech Stack', content: ['Node.js – Runtime environment', 'TypeScript – Type-safe development', 'Zod – Schema validation', 'JWT – Authentication tokens', 'bcryptjs – Password hashing', 'CORS – Cross-origin resource sharing middleware'] },
+]
+
 export {
   projectDetails,
   mySkillSet,
+  pixel_playground,
 }
