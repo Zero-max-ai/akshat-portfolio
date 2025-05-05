@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import Sun from '../assets/Sun.svg';
-import Moon from '../assets/Moon.svg';
 import useMenuStore from '../store/menu';
 
 const MobNavigation = () => {
