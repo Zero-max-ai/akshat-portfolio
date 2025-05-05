@@ -6,7 +6,7 @@ const NotFound = () => {
     <div className="bg-[#f7f7f7] dark:bg-[#191C1F] dark:text-white min-h-[100vh] flex flex-col items-center justify-center">
       <div className="w-11/12 mx-auto flex items-center justify-center gap-[32px]">
         <div className="font-thin flex flex-col gap-3 max-w-[700px]">
-          <Heading head={"You'd been 404'd ≧∇≦"} />
+          <Heading head={"You've been 404'd ≧∇≦"} />
           <span>
             Looks like this page disappeared faster than a cat when you say “bath time.”
           </span>
